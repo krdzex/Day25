@@ -14,7 +14,9 @@ class GetRequest extends React.Component {
         );
     }
     componentDidMount() {
-        fetch('https://api.npms.io/v2/search?q=react').then(response => response.json()).then(data => this.setState({ totalReactPackages: data.total }));
+        fetch('https://api.npms.io/v2/search?q=react')
+            .then(response => response.json())
+            .then(data => this.setState({ totalReactPackages: data.total }));
     }
 }
 export default GetRequest;
