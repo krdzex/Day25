@@ -24,7 +24,8 @@ class GetRequestErrorHandling extends React.Component {
                 return Promise.reject(error);
             }
             this.setState({ totalReactPackages: data.total })
-        }).catch(error => {
+        })
+        .catch(error => {
             this.setState({ errorMessage: error.toString() });
             console.error('There was an error!', error);
         });
