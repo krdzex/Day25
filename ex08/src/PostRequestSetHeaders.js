@@ -21,7 +21,7 @@ class PostRequestSetHeaders extends React.Component {
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': 'Bearer my-token',
-                'My-Custom-Header': 'footbar'
+                'My-Custom-Header': 'foobar'
             },
             body: JSON.stringify({ title: 'React POST Request Example' })
         };
